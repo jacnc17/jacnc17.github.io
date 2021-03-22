@@ -6,7 +6,8 @@
 	}
 	
 	#contenido {
-    width:60em;
+    width:75%;
+	max-width: 70em;
   	margin-top: 0em;
   	margin-bottom: 3em;
     margin-left:auto; 
@@ -27,8 +28,9 @@
 	  font-size: 1.2em;
 	  font-weight: bold;
 		color: #fff;
-		background-color: #CC9900;
+		background-color: #008200;
 	  padding: 0.3em;
+	  text-align: left;
 	}
 	
 	.t3{
@@ -54,7 +56,7 @@
 	  font-family: arial, helvetica, sans-serif;
 	  font-weight: bold;
 	  font-size: 3em;
-		color: #CC9900;
+		color: #494949;
 	}
 	
 	#aceitera{
@@ -69,7 +71,7 @@
 		font-weight: bold;
 	  font-size: 1.2em;
 		font-style: italic;
-		color: #999;
+		color: #494949;
 	}	
 	
 	
@@ -79,7 +81,7 @@
 	
 	
 	#tabla_compra {
-	  width: 60em;
+	  width: 100%;
 	  font-family: verdana, arial, helvetica, sans-serif;
 		font-size: 1em;
 	}
@@ -88,8 +90,9 @@
 	  padding: 0.5em;
 	}
 	
-	#conceptos td{
+	#conceptos th{
 	  background-color: #f0f0f0;
+	  padding: 0.5em 0.5em 0.5em 0.5em;
 		border: 1px solid #ccc;
 	}
 	
@@ -97,7 +100,8 @@
 	  padding-top: 0.5em;
 		border-top: 1px solid #ccc;
 	}
-	
+
+
 	#info_en{
 	  font-size: 0.9em;
 	  text-align: right;
@@ -127,10 +131,10 @@
 	}
 	
 	#datos_personales{
-    float:left; 
-		width: 30em;	
-  }
+		float:left; 
+	}
 	
+
 	#datos_envio{
 		float: left;			
 	}
@@ -141,22 +145,28 @@
   }
 	
 	.obligatorio{
-	  color: #c00;
+	  color: #b30000;
 	}
 	
 	.campo_form{
-	  margin-top: 0.5em;
+		margin-top: 0.5em;
+		white-space: nowrap;
 	}
 	
   .campo_form label{
     padding-left: 1em;
 		padding-right: 1em;
     display: block;
-    width: 11em;
+    width: 12em;
     float: left;
 		text-align: right;
-  }
 	
+  }
+
+	.fieldset_borde {
+		border:1px solid green;
+	}
+
 	#submit{
 	  text-align: right;
 	}
@@ -167,7 +177,8 @@
 
 
 	#garantias{
-	  text-align: justify;
+		text-align: left;
+		line-height: 150%;
 	}	
 
 	.lista{
