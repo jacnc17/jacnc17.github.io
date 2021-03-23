@@ -15,7 +15,7 @@ function verifica_nif(dni) {
 	var expresion_regular_dni
 	var resultado=true
 
-	if (dni!=null && dni!='')
+	if (dni)
 	{
 		expresion_regular_dni = /^\d{8}[a-zA-Z]$/;
 
@@ -121,7 +121,7 @@ function verifica ()
 <p id="logo">
 	<span id="La">La</span>
 	<span id="aceitera">Aceitera</span> 
-	<span id="lema"><br>Tu tienda de aceite en Internet</span>
+	<span id="lema"><br/>Tu tienda de aceite en Internet</span>
 </p>
 	
 
@@ -139,7 +139,7 @@ function verifica ()
 
 	<table id="tabla_compra" summary="Productos en la cesta de la compra de tienda La Aceitera, indicando cada fila un tipo de producto, 
 		el precio unitario del mismo, las unidades compradas y el total por cada producto.">
-		<caption><h2 class="t2">Artículos en la cesta</h2></caption>
+		<caption class="t2">Artículos en la cesta</caption>
 		<thead>
 			<tr id="conceptos">
 				<th id="head_1" abbr="Producto"><strong>Producto</strong></th>
@@ -169,7 +169,7 @@ function verifica ()
 			</tr>
 		</tbody>
 		<tfoot id="total">
-			<td colspan="4"><strong>Precio Total </strong>242,97 &euro;</td>
+			<tr><td colspan="4"><strong>Precio Total </strong>242,97 &euro;</td></tr>
 		</tfoot>
 	</table>
 
@@ -194,10 +194,10 @@ function verifica ()
 
 	<form action="#">
 		<fieldset> 
-			<legend><p class="info"><span class="i">i</span> Los campos marcados con * son obligatorios.</p>	</legend>
+			<legend class="info"><span class="i">i</span> Los campos marcados con * son obligatorios.</legend>
 			<div id="datos_personales">
 				<fieldset class="fieldset_borde"> 
-					<legend><p class="t3">Datos personales</p></legend>
+					<legend class="t3">Datos personales</legend>
 					<div class="campo_form">
 						<label for="empresa">Empresa </label>
 						<input accesskey="1" id="empresa" name="empresa" type="text" title="Empresa"/>
@@ -226,7 +226,7 @@ function verifica ()
 			</div>	
 			<div id="datos_envio">
 				<fieldset class="fieldset_borde"> 
-					<legend><p class="t3">Datos de env&iacute;o</p></legend>
+					<legend class="t3">Datos de env&iacute;o</legend>
 					<div class="campo_form">
 						<label for="dir" class="obligatorio">Direcci&oacute;n *</label>
 						<input accesskey="7" id="dir" name="dir" type="text" title="Dirección de envío"/>
@@ -245,7 +245,7 @@ function verifica ()
 					</div>
 					<div class="campo_form">
 						<label for="horario">Horario de entrega </label>
-						<select accesskey="h" id="horario" name="horario" title="Horario de entrega">    
+						<select id="horario" name="horario" title="Horario de entrega">    
 							<option selected="selected" value="all" title="Entrega todo el día">Todo el d&iacute;a</option>    
 							<option value="a" title="Entrega de 9:00 a 14:00">De 9:00 a 14:00 horas</option>      
 							<option value="b" title="Entrega de 14:00 a 19:00">De 14:00 a 19:00 horas</option>
@@ -317,7 +317,7 @@ function verifica ()
       a cualquiera de nuestros buzones implica la aceptaci&oacute;n de esta pol&iacute;tica 
       de privacidad, as&iacute; como la autorizaci&oacute;n a La Aceitera para que 
       trate los datos personales que nos facilite.</p>
-    <p><strong>Tratamiento de datos personales</strong>: <li>Los datos de los Socios ser&aacute;n utilizados para el env&iacute;o a 
+    <p><strong>Tratamiento de datos personales</strong>:<ul> <li>Los datos de los Socios ser&aacute;n utilizados para el env&iacute;o a 
       trav&eacute;s de email de las ventas que realice La Aceitera y para la entrega 
       de los compras.</li></p>
     <p><li>Por la mera visita a la web, los Usuarios no facilitan informaci&oacute;n 
@@ -328,7 +328,7 @@ function verifica ()
       tipo de informaci&oacute;n relativa a &eacute;stos.</li></p>
     <p><li>La Aceitera se compromete a guardar la m&aacute;xima reserva y confidencialidad 
       sobre la informaci&oacute;n que le sea facilitada y a utilizarla &uacute;nicamente 
-      para los fines indicados.</li></p>
+      para los fines indicados.</li></ul></p>
     <p><strong>Veracidad de datos</strong>:La Aceitera presupone que los datos han sido introducidos por su titular o por 
       persona autorizada por &eacute;ste, as&iacute; como que son correctos y 
       exactos.</p>
@@ -360,7 +360,19 @@ function verifica ()
 
 
 
+
+<p>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="https://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+            alt="Valid CSS!" />
+    </a>
+</p>
 </div>
-
-
 </body></html>
