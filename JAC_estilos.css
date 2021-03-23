@@ -102,6 +102,11 @@
 	}
 
 
+	#total{
+	  font-size: 1.1em;
+	  text-align: right;
+	}
+
 	#info_en{
 	  font-size: 0.9em;
 	  text-align: right;
